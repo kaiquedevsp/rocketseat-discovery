@@ -1,0 +1,77 @@
+<script>
+/*
+    let nota
+
+    let names = {
+        Aluno1: Thomas,
+        Luis,
+        Matheus,
+        Tainá,
+        Rodrigo,
+}
+
+Agata = 94;
+Luis = 83;
+Matheus = 52;
+Tainá = 100;
+Rodrigo = 74;
+
+
+
+    // Array
+
+const alunos = [
+    'Aghata',
+    'Luis',
+    'Matheus',
+    'Tainá',
+    {
+        name: 'Rodrigo',
+        nota: 86
+    }
+]
+
+// acessar valores dentro do array
+console.log(alunos)
+*/
+
+let score = 100
+
+
+function getScore(score) {
+    let scoreA = score >=90 && score <=100
+    let scoreB = score >=80 && score <=89
+    let scoreC = score >=70 && score <=79
+    let scoreD = score >=60 && score <=69
+    let scoreF = score < 60 && score >= 0
+
+    let scoreFinal;
+
+    if (scoreA) {
+        scoreFinal = "A"
+    } else if (scoreB) {
+        scoreFinal = "B"
+    } else if (scoreC) {
+        scoreFinal = "C"
+    } else if (scoreD) {
+        scoreFinal = "D"
+    } else if (scoreF) {
+        scoreFinal = "F"
+    } else {
+        scoreFinal = "Nota invalida"
+    }
+
+    return scoreFinal
+}
+
+console.log(getScore(-5))
+console.log(getScore(137))
+console.log(getScore(98))
+console.log(getScore(83))
+console.log(getScore(83))
+console.log(getScore(99))
+console.log(getScore(100))
+console.log(getScore(60))
+console.log(getScore(24))
+
+</script>
